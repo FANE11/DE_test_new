@@ -1,0 +1,155 @@
+@font-face {
+  font-family: Gilroy;
+  src: url("../../fonts/Gilroy-Regular.woff2");
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  padding-top: 40px;
+
+
+  .logo {
+    width: 48px;
+    height: auto;
+    padding-left: 80px;
+  }
+
+  .burger-menu {
+    width: 32px;
+    height: 32px;
+    padding-right: 80px;
+  }
+
+  @media(width <=1200px) {
+    .burger-menu {
+      padding-right: 10px;
+    }
+
+    .logo {
+      padding-left: 10px;
+    }
+  }
+}
+
+.container1 {
+  background: linear-gradient(0deg, #98C3E8 1.84%, rgb(152 195 232 / 0%) 20.12%);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+
+  @media (width <= 1000px) {
+    .content-wrapper {
+      justify-content: center;
+    }
+  }
+
+  .content-wrapper {
+    display: flex;
+  }
+
+  .content-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 300px;
+
+    .content {
+      padding: 20px;
+      text-align: center;
+      background-color: white;
+    }
+
+    .title {
+      font: Galien;
+      font-size: 64px;
+      margin-bottom: 10px;
+      Line-height: 74px;
+      color: #1F3F68;
+    }
+
+    .text {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #1F3F68;
+      font-family: Gilroy;
+      Line-height: 26px;
+      opacity: 0.6;
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+
+    @media (width <= 415px) {
+      .text p br {
+        display: none;
+      }
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #5A98D0;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 220px;
+      Height: 56px;
+      font-family: Gilroy;
+    }
+
+    .button:hover {
+      background-color: #2980b9;
+    }
+  }
+
+  @media (width <= 1335px) {
+    .content-left {
+      padding-left: 150px;
+    }
+  }
+
+  @media (width <= 1000px) {
+    .content-left {
+      padding-left: 100px;
+    }
+  }
+
+  @media (width <= 740px) {
+    .content-left {
+      padding-left: 0;
+    }
+  }
+
+  .content-right {
+    display: flex;
+    width: 687.25px;
+    height: 612.56px;
+    flex: 1;
+
+    @media (width <= 1135px) {
+      display: none;
+    }
+  }
+
+}
+
+@media (width <= 1135px) {
+  .container1 {
+    height: auto;
+  }
+}

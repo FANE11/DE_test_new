@@ -1,0 +1,177 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("../../fonts/Gilroy-Regular.woff2");
+  }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(20 16 26 / 50%);
+    justify-content: center; 
+  }
+  
+ 
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px 40px; 
+    border: 1px solid #356EAD; 
+    width: 440px;
+    height: 700px;
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 15px;
+  }
+  
+  
+  input[type="text"],
+  input[type="email"] {
+    height: 72px; 
+    border-radius: 10px; 
+    border: 1px solid #356EAD; 
+    opacity: 0.5;
+    
+  }
+  
+  textarea {
+    width: 428px; 
+    height: 144px; 
+    border-radius: 10px; 
+    border: 1px solid #356EAD;
+    opacity: 0.5;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px; 
+    
+  }
+  
+  label, input, textarea, button {
+    width: 100%;
+    color: #1F3F68;
+  }
+ 
+  .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .modal-content h2 {
+    font-size: 24px; 
+    color: #1F3F68; 
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #261750;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  body.modal-open {
+    overflow: hidden;
+  }
+  
+  button[type="submit"] {
+    width: 408px; 
+    height: 72px;
+    background-color: #5A98D0; 
+    border: none; 
+    border-radius: 15px; 
+    color: #fff; 
+    font-family: Gilroy, sans-serif; 
+    font-size: 16px;
+    line-height: 26px; 
+    cursor: pointer; 
+    margin-top: 60px;
+  }
+
+  label {
+    display: block; 
+    margin-bottom: 5px; 
+    
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  
+
+.popup.success {
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 30px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+
+
+.popup.error {
+  background-color: #f44336;
+  color: white;
+  margin-top: 30px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+
+@media (width <= 530px) {
+  .modal-content {
+      width: 100%;
+      max-width: 320px;
+      max-height: 600px;
+      padding: 10px; 
+  }
+
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      height: 60px;
+      width: 270px;
+     
+  }
+
+  button[type="submit"] {
+      width: 270px; 
+      height: 60px;
+      margin-top: 30px; 
+  }
+
+  .popup.error
+  {
+    height: 35px;
+    width: 100%;
+    max-width: 270px;
+    text-align: center;
+  }
+
+  .popup.success{
+    height: 35px;
+    width: 100%;
+    max-width: 270px;
+    text-align: center;
+  }
+}
